@@ -1,0 +1,11 @@
+E:\公司项目\资管部门\考试系统\DWKS\DWKS_DLL\DAL\bin\Debug\DAL.dll
+E:\公司项目\资管部门\考试系统\DWKS\DWKS_DLL\DAL\bin\Debug\DAL.pdb
+E:\公司项目\资管部门\考试系统\DWKS\DWKS_DLL\DAL\bin\Debug\Common.dll
+E:\公司项目\资管部门\考试系统\DWKS\DWKS_DLL\DAL\bin\Debug\DBUtility.dll
+E:\公司项目\资管部门\考试系统\DWKS\DWKS_DLL\DAL\bin\Debug\Model.dll
+E:\公司项目\资管部门\考试系统\DWKS\DWKS_DLL\DAL\bin\Debug\Common.pdb
+E:\公司项目\资管部门\考试系统\DWKS\DWKS_DLL\DAL\bin\Debug\DBUtility.pdb
+E:\公司项目\资管部门\考试系统\DWKS\DWKS_DLL\DAL\bin\Debug\Model.pdb
+E:\公司项目\资管部门\考试系统\DWKS\DWKS_DLL\DAL\obj\Debug\ResolveAssemblyReference.cache
+E:\公司项目\资管部门\考试系统\DWKS\DWKS_DLL\DAL\obj\Debug\DAL.dll
+E:\公司项目\资管部门\考试系统\DWKS\DWKS_DLL\DAL\obj\Debug\DAL.pdb

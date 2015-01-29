@@ -1,0 +1,5 @@
+E:\公司项目\资管部门\考试系统\DWKS\DWKS_DLL\Document\bin\Debug\Document.dll
+E:\公司项目\资管部门\考试系统\DWKS\DWKS_DLL\Document\bin\Debug\Document.pdb
+E:\公司项目\资管部门\考试系统\DWKS\DWKS_DLL\Document\obj\Debug\ResolveAssemblyReference.cache
+E:\公司项目\资管部门\考试系统\DWKS\DWKS_DLL\Document\obj\Debug\Document.dll
+E:\公司项目\资管部门\考试系统\DWKS\DWKS_DLL\Document\obj\Debug\Document.pdb
