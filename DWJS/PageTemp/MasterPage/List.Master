@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="List.master.cs" Inherits="WZGJGL.PageTemp.MasterPage.List" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="<%=PageBase.Url%>PageTemp/Style/Css/masterMain.css" rel="stylesheet" type="text/css" />
+    <script src="<%=PageBase.Url%>PageTemp/Style/Js/jquery-1.8.2.min.js" type="text/javascript"></script>
+    <script src="<%=PageBase.Url%>PageTemp/Style/Js/CommonJs.js" type="text/javascript"></script>
+    <script src="<%=PageBase.Url%>PageTemp/Style/Js/table.js" type="text/javascript"></script>
+    <script src="<%=PageBase.Url%>PageTemp/Style/Js/jquery.cookie.js" type="text/javascript"></script>
+    <script src="<%=PageBase.Url%>js/My97/WdatePicker.js" type="text/javascript"></script>
+    <link href="<%=PageBase.Url%>js/jqueryUI/css/start/jquery-ui-1.8.21.custom.css" rel="stylesheet" type="text/css" />
+    <script src="<%=PageBase.Url%>js/jqueryUI/js/jquery-ui-1.8.21.custom.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        CommonJs.Url = "<%=PageBase.Url%>";
+        CommonJs.StrWhereOutPut = "<%=this.basePage.StrWhereOutPutSessionName%>";
+    </script>
+    <asp:ContentPlaceHolder ID="ContentHead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+        <asp:ContentPlaceHolder ID="ContentBody" runat="server">
+        </asp:ContentPlaceHolder>
+        <script type="text/javascript">
+            $(function () {
+                $("form").append("<%=CommonClass.StringHander.Common.GetHiddenHtml("page","1")%>");
+                $.XCLTableList();
+                $("#btnSearch").live("click", function () {
+                    $(this).closest("form").submit();
+                });
+                $(".divSearch").keypress(function (event) {
+                    if (event.keyCode == 13) {
+                       $("#btnSearch").closest("form").submit();
+                    }
+                });
+
+                var showOrHideSearchCookieName="showOrHideSearchCookie";
+                $btnSearchShowOrHide=$("#btnSearchShowOrHide");
+                $tableSearch=$(".divSearch .tableSearch");
+                var InitSearchDiv=function(){
+                    if($tableSearch.css("display")=="none"){
+                        $btnSearchShowOrHide.text($btnSearchShowOrHide.attr("showName"));
+                        $.cookie(showOrHideSearchCookieName,"0");
+                    }else{
+                        $btnSearchShowOrHide.text($btnSearchShowOrHide.attr("hideName"));
+                        $.cookie(showOrHideSearchCookieName,"1");
+                    }
+                }
+                $btnSearchShowOrHide.live("click",function () {
+                    $tableSearch.toggle();
+                    InitSearchDiv();
+                });
+                if($.cookie(showOrHideSearchCookieName)=="0"){
+                    $tableSearch.hide();
+                }
+                InitSearchDiv();
+            });
+        </script>
+</body>
+</html>

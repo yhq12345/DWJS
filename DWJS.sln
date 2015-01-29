@@ -3,54 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DWJS", "DWJS\DWJS.csproj", "{98A0BC09-806C-42C8-B16B-B59580460793}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "..\DWJS_DLL\BLL\BLL.csproj", "{906A9FCF-D754-444C-B24B-7A5EADBF69EE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonClass", "..\DWJS_DLL\CommomClass\CommonClass.csproj", "{DA433855-693C-4C83-ABC4-D04ACB2EEC6C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "..\DWJS_DLL\Common\Common.csproj", "{B109F0F5-B53C-4A7C-AAF4-7BDB3AF4FD24}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "..\DWJS_DLL\DAL\DAL.csproj", "{0EE90E7F-8DE3-4771-9031-E9A4F9AEBDD7}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBUtility", "..\DWJS_DLL\DBUtility\DBUtility.csproj", "{8998790F-66A6-4F26-AA27-F0277892AB7F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Document", "..\DWJS_DLL\Document\Document.csproj", "{E227DF38-47EF-4A13-BE4F-F69C8707829E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "..\DWJS_DLL\Model\Model.csproj", "{C77D05AE-AD80-434B-A5B4-E260C2365E80}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemConfig", "..\DWJS_DLL\SystemConfig\SystemConfig.csproj", "{40730EC4-16F5-4248-997C-A3B2386166B3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "DWJSDLL\BLL\BLL.csproj", "{906A9FCF-D754-444C-B24B-7A5EADBF69EE}"
 EndProject
 Global
-	GlobalSection(SourceCodeControl) = preSolution
-		SccNumberOfProjects = 7
-		SccProjectUniqueName0 = ..\\DWJS_DLL\\CommomClass\\CommonClass.csproj
-		SccProjectName0 = \u0022$/DWKS/DWKS.root/DWKS/DWKS_DLL/CommomClass\u0022,\u0020JIGEAAAA
-		SccLocalPath0 = ..\\DWJS_DLL\\CommomClass
-		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
-		SccProjectUniqueName1 = ..\\DWJS_DLL\\Common\\Common.csproj
-		SccProjectName1 = \u0022$/DWKS/DWKS.root/DWKS/DWKS_DLL/Common\u0022,\u0020SNGEAAAA
-		SccLocalPath1 = ..\\DWJS_DLL\\Common
-		SccProvider1 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
-		SccProjectUniqueName2 = ..\\DWJS_DLL\\DAL\\DAL.csproj
-		SccProjectName2 = \u0022$/DWKS/DWKS.root/DWKS/DWKS_DLL/DAL\u0022,\u0020EPGEAAAA
-		SccLocalPath2 = ..\\DWJS_DLL\\DAL
-		SccProvider2 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
-		SccProjectUniqueName3 = ..\\DWJS_DLL\\DBUtility\\DBUtility.csproj
-		SccProjectName3 = \u0022$/DWKS/DWKS.root/DWKS/DWKS_DLL/DBUtility\u0022,\u0020BQGEAAAA
-		SccLocalPath3 = ..\\DWJS_DLL\\DBUtility
-		SccProvider3 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
-		SccProjectUniqueName4 = ..\\DWJS_DLL\\Document\\Document.csproj
-		SccProjectName4 = \u0022$/DWKS/DWKS.root/DWKS/DWKS_DLL/Document\u0022,\u0020MQGEAAAA
-		SccLocalPath4 = ..\\DWJS_DLL\\Document
-		SccProvider4 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
-		SccProjectUniqueName5 = ..\\DWJS_DLL\\Model\\Model.csproj
-		SccProjectName5 = \u0022$/DWKS/DWKS.root/DWKS/DWKS_DLL/Model\u0022,\u0020ZQGEAAAA
-		SccLocalPath5 = ..\\DWJS_DLL\\Model
-		SccProvider5 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
-		SccProjectUniqueName6 = ..\\DWJS_DLL\\SystemConfig\\SystemConfig.csproj
-		SccProjectName6 = \u0022$/DWKS/DWKS.root/DWKS/DWKS_DLL/SystemConfig\u0022,\u0020WRGEAAAA
-		SccLocalPath6 = ..\\DWJS_DLL\\SystemConfig
-		SccProvider6 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -64,34 +19,6 @@ Global
 		{906A9FCF-D754-444C-B24B-7A5EADBF69EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{906A9FCF-D754-444C-B24B-7A5EADBF69EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{906A9FCF-D754-444C-B24B-7A5EADBF69EE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DA433855-693C-4C83-ABC4-D04ACB2EEC6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DA433855-693C-4C83-ABC4-D04ACB2EEC6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DA433855-693C-4C83-ABC4-D04ACB2EEC6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DA433855-693C-4C83-ABC4-D04ACB2EEC6C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B109F0F5-B53C-4A7C-AAF4-7BDB3AF4FD24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B109F0F5-B53C-4A7C-AAF4-7BDB3AF4FD24}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B109F0F5-B53C-4A7C-AAF4-7BDB3AF4FD24}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B109F0F5-B53C-4A7C-AAF4-7BDB3AF4FD24}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0EE90E7F-8DE3-4771-9031-E9A4F9AEBDD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0EE90E7F-8DE3-4771-9031-E9A4F9AEBDD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0EE90E7F-8DE3-4771-9031-E9A4F9AEBDD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0EE90E7F-8DE3-4771-9031-E9A4F9AEBDD7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8998790F-66A6-4F26-AA27-F0277892AB7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8998790F-66A6-4F26-AA27-F0277892AB7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8998790F-66A6-4F26-AA27-F0277892AB7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8998790F-66A6-4F26-AA27-F0277892AB7F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E227DF38-47EF-4A13-BE4F-F69C8707829E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E227DF38-47EF-4A13-BE4F-F69C8707829E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E227DF38-47EF-4A13-BE4F-F69C8707829E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E227DF38-47EF-4A13-BE4F-F69C8707829E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C77D05AE-AD80-434B-A5B4-E260C2365E80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C77D05AE-AD80-434B-A5B4-E260C2365E80}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C77D05AE-AD80-434B-A5B4-E260C2365E80}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C77D05AE-AD80-434B-A5B4-E260C2365E80}.Release|Any CPU.Build.0 = Release|Any CPU
-		{40730EC4-16F5-4248-997C-A3B2386166B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{40730EC4-16F5-4248-997C-A3B2386166B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{40730EC4-16F5-4248-997C-A3B2386166B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{40730EC4-16F5-4248-997C-A3B2386166B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

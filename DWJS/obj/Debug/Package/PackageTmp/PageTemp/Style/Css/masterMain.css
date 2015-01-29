@@ -1,0 +1,67 @@
+﻿body{padding:0px;margin:0px;font-size:12px;font-family:"Microsoft YaHei",Sans-Serif; }
+img { border: 0 none;}
+ul, li { list-style-type: none;margin:0px;padding:0px;}
+a{text-decoration:none;}
+fieldset{padding:2px;border:solid 1px #ccc;}
+
+.divSearch{width:100%;margin:0px;color:#2b5836;margin-bottom:3px;}
+.divSearch input{width:164px;}
+.divSearch .tableSearch{width:100%;border-top:solid 1px #eee;border-left:solid 1px #eee;}
+.divSearch .tableSearch td{padding:2px;border-right:solid 1px #eee;border-bottom:solid 1px #eee;}
+.divSearch .tableSearch .searchFieldTitleTd{text-align:right;font-weight:bolder;}
+.divSearch #btnSearch{background:url(../images/ptjh_21.gif) no-repeat right top;width:65px;height:25px;background-position:0 -25px;display:block;}
+
+
+
+.tablehead{ background:url(../images/ptjh_060.gif) repeat-x left center; height:31px; border-top:1px #c8c8c8 solid;}
+.tablehead ul{ float:left;}
+.tablehead ul li{ float:left; height:24px; margin:3px 0 0 5px; position:relative;}
+.tablehead ul li.line{ width:2px; background:url(../images/tableheadline.gif) no-repeat left center;}
+.tablehead ul li a:link{ float:left; display:block;  padding-left:15px;height:24px;cursor:pointer;text-decoration:none;}
+.tablehead ul li a span{ /*float:left;*/ display:block;padding:5px 10px 5px 8px;line-height:14px;font-weight:bold;color:#337475;}
+.tablehead ul li a:visited{ float:left; display:block;  padding-left:15px;height:24px;cursor:pointer;text-decoration:none;}
+.tablehead ul li a:hover{background:url(../images/zzbtn_left.gif) no-repeat left top; text-decoration:none;color:#FFFFFF;}
+.tablehead ul li a:hover span{ background:url(../images/zzbtn_right.gif) no-repeat right top; }
+.tablehead ul li s{ background:url(../images/icon.gif) no-repeat 0 -9999px;}
+.tablehead ul li s{ display:inline-block; position:absolute; left:4px; top:5px; width:16px; height:16px; cursor:pointer;}
+.tablehead ul li s.addicon{ background-position:0 0;}
+.tablehead ul li s.ptjdicon{ background-position:0 -25px;}
+.tablehead ul li s.updateicon{ background-position:0 -49px;}
+.tablehead ul li s.copyicon{ background-position:0 -75px;}
+.tablehead ul li s.cancelicon{ background-position:0 -98px;}
+.tablehead ul li s.delicon{ background-position:0 -124px;}
+.tablehead ul li s.inicon{ background-position:0 -267px;}
+.tablehead ul li s.outicon{ background-position:0 -303px;}
+.tablehead ul li s.printicon{ background-position:0 -250px;}
+.tablehead ul li s.printViewicon{background-position:0 -75px;}
+.tablehead ul li s.printSeticon{background-position:0 -401px;}
+.tablehead ul li s.righticon{background-position:0 -472px;}
+.tablehead ul li s.downLoadAllicon{background-position:0 -362px;}
+.tablehead ul li s.starticon{background:url(../Images/start.gif) no-repeat center;}
+.tablehead ul li s.stopicon{background:url(../Images/stop.gif) no-repeat center;}
+
+
+.tablelist-box{ width:100%;padding-bottom:10px; margin:0 auto;background:#fff;}
+.tablelist-box .tableList{border-collapse:collapse; background:#ffffff;}
+.tablelist-box .tableList a:hover{ color:#2a735a;}
+.tablelist-box .tableList td{padding:0 5px; height:27px;}
+.tablelist-box .tableList td{border:1px solid #999999;}
+.tablelist-box table th{ white-space:nowrap; padding:0 5px; height:27px;}
+.tablelist-box .tableList th{ background:#43a696; border:1px #2a735a solid; color:#FFFFFF;}
+.tablelist-box .tableList th.th-line{background:#2a735a url(../images/ptjh_09.gif) repeat-y left;text-shadow: 0 -1px 0 #123;}
+.tablelist-box .tableList th.thinputbg{ background:url(../images/input-bg.gif) repeat-x left top #D47000; width:20px;}
+.tablelist-box .tableList img{ vertical-align:middle;}
+.tablelist-box .trHeader{line-height:25px;height:25px;}
+.tablelist-box .trHeader th{padding:2px;}
+.tablelist-box a{text-decoration:none;color:#222;}
+
+
+
+
+.divPager{width:100%;line-height:30px;text-align:center;height:30px;margin-top:10px;padding-bottom:20px;}
+.divPager .pagerBtn{width:50px;height:30px;line-height:30px;background:#43a696;color:#fff;display:block;float:left;text-align:center;font-weight:bolder;}
+.divPager .pagerBtn:hover{background:#2a735a;}
+.divPager .pagerCurrentBtn{width:40px;height:30px;line-height:30px;background:#2a735a;color:#fff;display:block;float:left;text-align:center;font-weight:bolder;}
+.divPager .pagerInputBox{width:40px;height:23px;line-height:30px;border:solid 2px #2a735a;float:left;}
+.divPager .pagerSubmitBtnClass{float:left;width:50px;height:30px;}
+.divPager .pagerInfoClass{color:#2a735a;font-size:13px;line-height:30px;}

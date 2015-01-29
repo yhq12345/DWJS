@@ -1,0 +1,27 @@
+﻿/*---------------------------Datagrid--------------------------------*/
+
+.dg_header
+{
+	font-weight: bold;
+	color: #ffffff;
+	text-align: center;
+}
+.dg_alter
+{
+background-color :#E7E7FF;
+border :solid 1px red;
+}
+.dg_item
+{
+color :#330099;
+
+}
+.dg_page
+{
+border :solid 1px red;
+}
+
+.datagrid
+{
+	border: 1px solid #C0C0C0;
+}

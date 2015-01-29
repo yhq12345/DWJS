@@ -1,0 +1,805 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root>
+  <OutPut>
+    <Table tableName="SpInfo">
+      <Field oldName="area" newName="县区"></Field>
+      <Field oldName="sp_name" newName="分光器名称"></Field>
+      <Field oldName="parent_dev" newName="上级分光器"></Field>
+      <Field oldName="pon" newName="PON口"></Field>
+      <Field oldName="order_no" newName="工单号"></Field>
+      <Field oldName="online_date" newName="入网时间"></Field>
+      <Field oldName="update_time" newName="更新时间"></Field>
+    </Table>
+
+    <Table tableName="SpInfoReport">
+      <Field oldName="日期" newName="日期"></Field>
+      <Field oldName="县市" newName="县市"></Field>
+      <Field oldName="分光器总数" newName="分光器总数"></Field>
+      <Field oldName="当月分光器总数" newName="当月分光器总数"></Field>
+      <Field oldName="无工单分光器数" newName="无工单分光器数"></Field>
+    </Table>
+
+    <Table tableName="v_当前无工单分光器汇总">
+      <Field oldName="县市" newName="县市"></Field>
+      <Field oldName="分光器总数" newName="分光器总数"></Field>
+      <Field oldName="当月分光器总数" newName="当月分光器总数"></Field>
+      <Field oldName="无工单分光器数" newName="无工单分光器数"></Field>
+    </Table>
+
+    <Table tableName="v_irm_iv_splitter_web">
+      <Field oldName="所属区县" newName="县区"></Field>
+      <Field oldName="分光器名称" newName="分光器名称"></Field>
+      <Field oldName="关联父分光器" newName="上级分光器"></Field>
+      <Field oldName="归属OLT的PON口主用" newName="PON口"></Field>
+      <Field oldName="工单编号" newName="工单号"></Field>
+      <Field oldName="入网时间" newName="入网时间"></Field>
+      <Field oldName="update_date" newName="更新时间"></Field>
+    </Table>
+
+    <Table tableName="PtnSectionInfoReport">
+      <Field oldName="日期" newName="日期"></Field>
+      <Field oldName="县市" newName="县市"></Field>
+      <Field oldName="ptn总数" newName="ptn总数"></Field>
+      <Field oldName="未关联光路的ptn数量" newName="未关联光路的ptn数量"></Field>
+      <Field oldName="sdh总数" newName="sdh总数"></Field>
+      <Field oldName="未关联光路的sdh数量" newName="未关联光路的sdh数量"></Field>
+    </Table>
+
+    <Table tableName="PtnSectionInfo">
+      <Field oldName="create_time" newName="创建时间"></Field>
+      <Field oldName="area" newName="区县"></Field>
+      <Field oldName="name" newName="ptn段名称"></Field>
+      <Field oldName="cir_name" newName="光路"></Field>
+      <Field oldName="a_end_room_name" newName="a端机房"></Field>
+      <Field oldName="a_end_dev_name" newName="a端设备"></Field>
+      <Field oldName="a_end_port_name" newName="a端端口"></Field>
+      <Field oldName="z_end_port_name" newName="z端端口"></Field>
+      <Field oldName="z_end_dev_name" newName="z端设备"></Field>
+      <Field oldName="z_end_room_name" newName="z端机房"></Field>
+    </Table>
+
+    <Table tableName="SdhSectionInfo">
+      <Field oldName="create_time" newName="创建时间"></Field>
+      <Field oldName="area" newName="区县"></Field>
+      <Field oldName="name" newName="Sdh段名称"></Field>
+      <Field oldName="cir_name" newName="光路"></Field>
+      <Field oldName="a_end_room_name" newName="a端机房"></Field>
+      <Field oldName="a_end_dev_name" newName="a端设备"></Field>
+      <Field oldName="a_end_port_name" newName="a端端口"></Field>
+      <Field oldName="z_end_port_name" newName="z端端口"></Field>
+      <Field oldName="z_end_dev_name" newName="z端设备"></Field>
+      <Field oldName="z_end_room_name" newName="z端机房"></Field>
+    </Table>
+
+    <Table tableName="数据统计_空间">
+      <Field oldName="DataTongJiID" newName="DataTongJiID"></Field>
+      <Field oldName="DataTongJiDate" newName="DataTongJiDate"></Field>
+      <Field oldName="CODE" newName="CODE"></Field>
+      <Field oldName="站点总量" newName="站点总量"></Field>
+      <Field oldName="资源点总量" newName="资源点总量"></Field>
+      <Field oldName="机房总量" newName="机房总量"></Field>
+      <Field oldName="局站名称不含规定的区域范围字段的站点数量" newName="局站名称不含规定的区域范围字段的站点数量"></Field>
+      <Field oldName="机房名称没有以局站名称开头的机房数量" newName="机房名称没有以局站名称开头的机房数量"></Field>
+      <Field oldName="机房名称中不包含机房字符的机房" newName="机房名称中不包含机房字符的机房"></Field>
+      <Field oldName="超区县范围的站点" newName="超区县范围的站点"></Field>
+      <Field oldName="超区县范围的资源点" newName="超区县范围的资源点"></Field>
+      <Field oldName="核心和骨干站点数" newName="核心和骨干站点数"></Field>
+      <Field oldName="不含二点五G及二点五G以上速率传输设备和OLT设备的汇聚站点" newName="不含二点五G及二点五G以上速率传输设备和OLT设备的汇聚站点"></Field>
+      <Field oldName="无汇聚层光缆或骨干层光缆关联的汇聚站点" newName="无汇聚层光缆或骨干层光缆关联的汇聚站点"></Field>
+      <Field oldName="汇聚站点总量" newName="汇聚站点总量"></Field>
+      <Field oldName="站点类型没有被定义为接入站点或汇聚站点或骨干站点或核心站点的无线物理基站站点" newName="站点类型没有被定义为接入站点或汇聚站点或骨干站点或核心站点的无线物理基站站点"></Field>
+      <Field oldName="无线物理基站汇聚站点总数" newName="无线物理基站汇聚站点总数"></Field>
+      <Field oldName="无设备的机房" newName="无设备的机房"></Field>
+      <Field oldName="无设备的资源点" newName="无设备的资源点"></Field>
+      <Field oldName="无机架的核心和骨干和汇聚和无线物理基站四类站点" newName="无机架的核心和骨干和汇聚和无线物理基站四类站点"></Field>
+      <Field oldName="核心和骨干和汇聚和无线物理基站四类站点总数" newName="核心和骨干和汇聚和无线物理基站四类站点总数"></Field>
+      <Field oldName="无DDF架或ODF架或DDF模块或ODF子框的无线物理基站" newName="无DDF架或ODF架或DDF模块或ODF子框的无线物理基站"></Field>
+      <Field oldName="包含BTS或NODEB设备的所有无线物理基站站点" newName="包含BTS或NODEB设备的所有无线物理基站站点"></Field>
+      <Field oldName="无线机房下没有BSC_BTS_NODEB_RNC_直放站_RRU的机房数" newName="无线机房下没有BSC_BTS_NODEB_RNC_直放站_RRU的机房数"></Field>
+      <Field oldName="有BSC_BTS_NODEB_RNC设备的机房没有设置为无线机房的机房数" newName="有BSC_BTS_NODEB_RNC设备的机房没有设置为无线机房的机房数"></Field>
+      <Field oldName="无传输设备的无线物理基站" newName="无传输设备的无线物理基站"></Field>
+      <Field oldName="无线物理基站无传输设备_包含BTS或NODEB设备的所有无线物理基站站点" newName="无线物理基站无传输设备_包含BTS或NODEB设备的所有无线物理基站站点"></Field>
+      <Field oldName="无逻辑光路或业务电路的站点" newName="无逻辑光路或业务电路的站点"></Field>
+      <Field oldName="无逻辑光路或业务电路的资源点" newName="无逻辑光路或业务电路的资源点"></Field>
+    </Table>
+
+    <Table tableName="数据统计_空间_实时">
+      <Field oldName="CODE" newName="CODE"></Field>
+      <Field oldName="站点总量" newName="站点总量"></Field>
+      <Field oldName="资源点总量" newName="资源点总量"></Field>
+      <Field oldName="机房总量" newName="机房总量"></Field>
+      <Field oldName="局站名称不含规定的区域范围字段的站点数量" newName="局站名称不含规定的区域范围字段的站点数量"></Field>
+      <Field oldName="机房名称没有以局站名称开头的机房数量" newName="机房名称没有以局站名称开头的机房数量"></Field>
+      <Field oldName="机房名称中不包含机房字符的机房" newName="机房名称中不包含机房字符的机房"></Field>
+      <Field oldName="超区县范围的站点" newName="超区县范围的站点"></Field>
+      <Field oldName="超区县范围的资源点" newName="超区县范围的资源点"></Field>
+      <Field oldName="核心和骨干站点数" newName="核心和骨干站点数"></Field>
+      <Field oldName="不含二点五G及二点五G以上速率传输设备和OLT设备的汇聚站点" newName="不含二点五G及二点五G以上速率传输设备和OLT设备的汇聚站点"></Field>
+      <Field oldName="无汇聚层光缆或骨干层光缆关联的汇聚站点" newName="无汇聚层光缆或骨干层光缆关联的汇聚站点"></Field>
+      <Field oldName="汇聚站点总量" newName="汇聚站点总量"></Field>
+      <Field oldName="站点类型没有被定义为接入站点或汇聚站点或骨干站点或核心站点的无线物理基站站点" newName="站点类型没有被定义为接入站点或汇聚站点或骨干站点或核心站点的无线物理基站站点"></Field>
+      <Field oldName="无线物理基站汇聚站点总数" newName="无线物理基站汇聚站点总数"></Field>
+      <Field oldName="无设备的机房" newName="无设备的机房"></Field>
+      <Field oldName="无设备的资源点" newName="无设备的资源点"></Field>
+      <Field oldName="无机架的核心和骨干和汇聚和无线物理基站四类站点" newName="无机架的核心和骨干和汇聚和无线物理基站四类站点"></Field>
+      <Field oldName="核心和骨干和汇聚和无线物理基站四类站点总数" newName="核心和骨干和汇聚和无线物理基站四类站点总数"></Field>
+      <Field oldName="无DDF架或ODF架或DDF模块或ODF子框的无线物理基站" newName="无DDF架或ODF架或DDF模块或ODF子框的无线物理基站"></Field>
+      <Field oldName="包含BTS或NODEB设备的所有无线物理基站站点" newName="包含BTS或NODEB设备的所有无线物理基站站点"></Field>
+      <Field oldName="无线机房下没有BSC_BTS_NODEB_RNC_直放站_RRU的机房数" newName="无线机房下没有BSC_BTS_NODEB_RNC_直放站_RRU的机房数"></Field>
+      <Field oldName="有BSC_BTS_NODEB_RNC设备的机房没有设置为无线机房的机房数" newName="有BSC_BTS_NODEB_RNC设备的机房没有设置为无线机房的机房数"></Field>
+      <Field oldName="无传输设备的无线物理基站" newName="无传输设备的无线物理基站"></Field>
+      <Field oldName="无线物理基站无传输设备_包含BTS或NODEB设备的所有无线物理基站站点" newName="无线物理基站无传输设备_包含BTS或NODEB设备的所有无线物理基站站点"></Field>
+      <Field oldName="无逻辑光路或业务电路的站点" newName="无逻辑光路或业务电路的站点"></Field>
+      <Field oldName="无逻辑光路或业务电路的资源点" newName="无逻辑光路或业务电路的资源点"></Field>
+    </Table>
+
+    <!--数据统计_空间_站点-->
+    <Table tableName="数据统计_空间_站点">
+      <Field oldName="DataTongJiDate" newName="取数时间"></Field>
+      <Field oldName="ID" newName="标识"></Field>
+      <Field oldName="NAME" newName="站点名称"></Field>
+      <Field oldName="SITECATEGORY" newName="局站类型"></Field>
+      <Field oldName="LIFECYCLESTATUS" newName="生命周期状态"></Field>
+      <Field oldName="COUNTY_ID" newName="所属区县"></Field>
+      <Field oldName="PREFECTURE_ID" newName="所属地市"></Field>
+      <Field oldName="CREATEDATE" newName="数据录入时间"></Field>
+      <Field oldName="CREATOR" newName="数据录入人"></Field>
+      <Field oldName="UPDATEDATE" newName="数据修改时间"></Field>
+      <Field oldName="UPDATER" newName="数据修改人"></Field>
+    </Table>
+
+
+    <Table tableName="数据统计_空间_机房">
+      <Field oldName="DataTongJiDate" newName="取数时间"></Field>
+      <Field oldName="ID" newName="标识"></Field>
+      <Field oldName="NAME" newName="机房名称"></Field>
+      <Field oldName="LIFECYCLESTATUS" newName="生命周期状态"></Field>
+      <Field oldName="SITE_ID" newName="所属站点"></Field>
+      <Field oldName="COUNTY_ID" newName="所属区县"></Field>
+      <Field oldName="PREFECTURE_ID" newName="所属地市"></Field>
+      <Field oldName="CREATEDATE" newName="数据录入时间"></Field>
+      <Field oldName="CREATOR" newName="数据录入人"></Field>
+      <Field oldName="UPDATEDATE" newName="数据修改时间"></Field>
+      <Field oldName="UPDATER" newName="数据修改人"></Field>
+    </Table>
+
+    <Table tableName="数据统计_空间_资源点">
+      <Field oldName="DataTongJiDate" newName="取数时间"></Field>
+      <Field oldName="ID" newName="标识"></Field>
+      <Field oldName="NAME" newName="资源点名称"></Field>
+      <Field oldName="LIFECYCLESTATUS" newName="生命周期状态"></Field>
+      <Field oldName="COUNTY_ID" newName="所属区县"></Field>
+      <Field oldName="PREFECTURE_ID" newName="所属地市"></Field>
+      <Field oldName="CREATEDATE" newName="数据录入时间"></Field>
+      <Field oldName="CREATOR" newName="数据录入人"></Field>
+      <Field oldName="UPDATEDATE" newName="数据修改时间"></Field>
+      <Field oldName="UPDATER" newName="数据修改人"></Field>
+    </Table>
+
+    <Table tableName="数据统计_管线">
+      <Field oldName="DataTongJiID" newName="DataTongJiID"></Field>
+      <Field oldName="DataTongJiDate" newName="DataTongJiDate"></Field>
+      <Field oldName="CODE" newName="CODE"></Field>
+      <Field oldName="超区县范围的人井" newName="超区县范围的人井"></Field>
+      <Field oldName="超区县范围的电杆" newName="超区县范围的电杆"></Field>
+      <Field oldName="超区县范围的网络资源点_有光交" newName="超区县范围的网络资源点_有光交"></Field>
+      <Field oldName="杆路段录入长度小于等于零" newName="杆路段录入长度小于等于零"></Field>
+      <Field oldName="管道段录入长度小于等于零" newName="管道段录入长度小于等于零"></Field>
+      <Field oldName="光缆段录入长度小于等于零" newName="光缆段录入长度小于等于零"></Field>
+      <Field oldName="管道段长度大于300米" newName="管道段长度大于300米"></Field>
+      <Field oldName="杆路段长度大于300米" newName="杆路段长度大于300米"></Field>
+      <Field oldName="光缆段长度大于3000米" newName="光缆段长度大于3000米"></Field>
+      <Field oldName="管道长度偏差大于百分之10" newName="管道长度偏差大于百分之10"></Field>
+      <Field oldName="管道段长度偏差大于百分之10" newName="管道段长度偏差大于百分之10"></Field>
+      <Field oldName="杆路长度偏差大于百分之10" newName="杆路长度偏差大于百分之10"></Field>
+      <Field oldName="杆路段长度偏差大于百分之10" newName="杆路段长度偏差大于百分之10"></Field>
+      <Field oldName="光缆长度偏差大于百分之20" newName="光缆长度偏差大于百分之20"></Field>
+      <Field oldName="光缆段长度偏差大于百分之20" newName="光缆段长度偏差大于百分之20"></Field>
+      <Field oldName="挂墙段计算长度大于500米" newName="挂墙段计算长度大于500米"></Field>
+      <Field oldName="没有绑定管道段或杆路段的的光缆段" newName="没有绑定管道段或杆路段的的光缆段"></Field>
+      <Field oldName="孤立的电杆" newName="孤立的电杆"></Field>
+      <Field oldName="孤立的人手井" newName="孤立的人手井"></Field>
+      <Field oldName="没有纤芯使用的主配线层_汇聚层_骨干层光缆段" newName="没有纤芯使用的主配线层_汇聚层_骨干层光缆段"></Field>
+      <Field oldName="所有纤芯两端完全未成端的光缆" newName="所有纤芯两端完全未成端的光缆"></Field>
+    </Table>
+
+    <Table tableName="数据统计_管线_实时">
+      <Field oldName="CODE" newName="CODE"></Field>
+      <Field oldName="超区县范围的人井" newName="超区县范围的人井"></Field>
+      <Field oldName="超区县范围的电杆" newName="超区县范围的电杆"></Field>
+      <Field oldName="超区县范围的网络资源点_有光交" newName="超区县范围的网络资源点_有光交"></Field>
+      <Field oldName="杆路段录入长度小于等于零" newName="杆路段录入长度小于等于零"></Field>
+      <Field oldName="管道段录入长度小于等于零" newName="管道段录入长度小于等于零"></Field>
+      <Field oldName="光缆段录入长度小于等于零" newName="光缆段录入长度小于等于零"></Field>
+      <Field oldName="管道段长度大于300米" newName="管道段长度大于300米"></Field>
+      <Field oldName="杆路段长度大于300米" newName="杆路段长度大于300米"></Field>
+      <Field oldName="光缆段长度大于3000米" newName="光缆段长度大于3000米"></Field>
+      <Field oldName="管道长度偏差大于百分之10" newName="管道长度偏差大于百分之10"></Field>
+      <Field oldName="管道段长度偏差大于百分之10" newName="管道段长度偏差大于百分之10"></Field>
+      <Field oldName="杆路长度偏差大于百分之10" newName="杆路长度偏差大于百分之10"></Field>
+      <Field oldName="杆路段长度偏差大于百分之10" newName="杆路段长度偏差大于百分之10"></Field>
+      <Field oldName="光缆长度偏差大于百分之20" newName="光缆长度偏差大于百分之20"></Field>
+      <Field oldName="光缆段长度偏差大于百分之20" newName="光缆段长度偏差大于百分之20"></Field>
+      <Field oldName="挂墙段计算长度大于500米" newName="挂墙段计算长度大于500米"></Field>
+      <Field oldName="没有绑定管道段或杆路段的的光缆段" newName="没有绑定管道段或杆路段的的光缆段"></Field>
+      <Field oldName="孤立的电杆" newName="孤立的电杆"></Field>
+      <Field oldName="孤立的人手井" newName="孤立的人手井"></Field>
+      <Field oldName="没有纤芯使用的主配线层_汇聚层_骨干层光缆段" newName="没有纤芯使用的主配线层_汇聚层_骨干层光缆段"></Field>
+      <Field oldName="所有纤芯两端完全未成端的光缆" newName="所有纤芯两端完全未成端的光缆"></Field>
+    </Table>
+
+    <Table tableName="数据统计_管线_超区县范围的人井">
+      <Field oldName="DataTongJiDate" newName="取数时间"></Field>
+      <Field oldName="ID" newName="标识"></Field>
+      <Field oldName="NAME" newName="名称"></Field>
+      <Field oldName="区县" newName="区县"></Field>
+      <Field oldName="x" newName="经度"></Field>
+      <Field oldName="y" newName="纬度"></Field>
+      <Field oldName="CREATEDATE" newName="数据录入时间"></Field>
+      <Field oldName="CREATOR" newName="数据录入人"></Field>
+      <Field oldName="UPDATEDATE" newName="数据修改时间"></Field>
+      <Field oldName="UPDATER" newName="数据修改人"></Field>
+    </Table>
+
+    <Table tableName="数据统计_管线_孤立的人手井">
+      <Field oldName="DataTongJiDate" newName="取数时间"></Field>
+      <Field oldName="ID" newName="标识"></Field>
+      <Field oldName="NAME" newName="名称"></Field>
+      <Field oldName="区县" newName="区县"></Field>
+      <Field oldName="CREATEDATE" newName="数据录入时间"></Field>
+      <Field oldName="CREATOR" newName="数据录入人"></Field>
+      <Field oldName="UPDATEDATE" newName="数据修改时间"></Field>
+      <Field oldName="UPDATER" newName="数据修改人"></Field>
+    </Table>
+
+    <Table tableName="数据统计_管线_超区县范围的电杆">
+      <Field oldName="DataTongJiDate" newName="取数时间"></Field>
+      <Field oldName="ID" newName="标识"></Field>
+      <Field oldName="NAME" newName="名称"></Field>
+      <Field oldName="区县" newName="区县"></Field>
+      <Field oldName="x" newName="经度"></Field>
+      <Field oldName="y" newName="纬度"></Field>
+      <Field oldName="CREATEDATE" newName="数据录入时间"></Field>
+      <Field oldName="CREATOR" newName="数据录入人"></Field>
+      <Field oldName="UPDATEDATE" newName="数据修改时间"></Field>
+      <Field oldName="UPDATER" newName="数据修改人"></Field>
+    </Table>
+
+    <Table tableName="数据统计_管线_孤立的电杆">
+      <Field oldName="DataTongJiDate" newName="取数时间"></Field>
+      <Field oldName="ID" newName="标识"></Field>
+      <Field oldName="NAME" newName="名称"></Field>
+      <Field oldName="区县" newName="区县"></Field>
+      <Field oldName="CREATEDATE" newName="数据录入时间"></Field>
+      <Field oldName="CREATOR" newName="数据录入人"></Field>
+      <Field oldName="UPDATEDATE" newName="数据修改时间"></Field>
+      <Field oldName="UPDATER" newName="数据修改人"></Field>
+    </Table>
+
+    <Table tableName="数据统计_管线_资源点">
+      <Field oldName="DataTongJiDate" newName="取数时间"></Field>
+      <Field oldName="ID" newName="标识"></Field>
+      <Field oldName="NAME" newName="资源点名称"></Field>
+      <Field oldName="LIFECYCLESTATUS" newName="生命周期状态"></Field>
+      <Field oldName="区县" newName="所属区县"></Field>
+      <Field oldName="PREFECTURE_ID" newName="区县"></Field>
+      <Field oldName="CREATEDATE" newName="数据录入时间"></Field>
+      <Field oldName="CREATOR" newName="数据录入人"></Field>
+      <Field oldName="UPDATEDATE" newName="数据修改时间"></Field>
+      <Field oldName="UPDATER" newName="数据修改人"></Field>
+    </Table>
+
+    <Table tableName="数据统计_管线_杆路段">
+      <Field oldName="DataTongJiDate" newName="取数时间"></Field>
+      <Field oldName="ID" newName="标识"></Field>
+      <Field oldName="NAME" newName="名称"></Field>
+      <Field oldName="区县" newName="区县"></Field>
+      <Field oldName="CREATEDATE" newName="数据录入时间"></Field>
+      <Field oldName="CREATOR" newName="数据录入人"></Field>
+      <Field oldName="UPDATEDATE" newName="数据修改时间"></Field>
+      <Field oldName="UPDATER" newName="数据修改人"></Field>
+      <Field oldName="CALCULATEDLENGTH" newName="计算长度"></Field>
+      <Field oldName="DIMLENGTH" newName="录入长度"></Field>
+    </Table>
+
+    <Table tableName="数据统计_管线_杆路">
+      <Field oldName="DataTongJiDate" newName="取数时间"></Field>
+      <Field oldName="ID" newName="标识"></Field>
+      <Field oldName="NAME" newName="名称"></Field>
+      <Field oldName="区县" newName="区县"></Field>
+      <Field oldName="CREATEDATE" newName="数据录入时间"></Field>
+      <Field oldName="CREATOR" newName="数据录入人"></Field>
+      <Field oldName="UPDATEDATE" newName="数据修改时间"></Field>
+      <Field oldName="UPDATER" newName="数据修改人"></Field>
+      <Field oldName="CALCULATEDLENGTH" newName="计算长度"></Field>
+      <Field oldName="DIMLENGTH" newName="录入长度"></Field>
+    </Table>
+
+    <Table tableName="数据统计_管线_管道段">
+      <Field oldName="DataTongJiDate" newName="取数时间"></Field>
+      <Field oldName="ID" newName="标识"></Field>
+      <Field oldName="NAME" newName="名称"></Field>
+      <Field oldName="区县" newName="区县"></Field>
+      <Field oldName="CREATEDATE" newName="数据录入时间"></Field>
+      <Field oldName="CREATOR" newName="数据录入人"></Field>
+      <Field oldName="UPDATEDATE" newName="数据修改时间"></Field>
+      <Field oldName="UPDATER" newName="数据修改人"></Field>
+      <Field oldName="CALCULATEDLENGTH" newName="计算长度"></Field>
+      <Field oldName="DIMLENGTH" newName="录入长度"></Field>
+    </Table>
+
+    <Table tableName="数据统计_管线_管道">
+      <Field oldName="DataTongJiDate" newName="取数时间"></Field>
+      <Field oldName="ID" newName="标识"></Field>
+      <Field oldName="NAME" newName="名称"></Field>
+      <Field oldName="区县" newName="区县"></Field>
+      <Field oldName="CREATEDATE" newName="数据录入时间"></Field>
+      <Field oldName="CREATOR" newName="数据录入人"></Field>
+      <Field oldName="UPDATEDATE" newName="数据修改时间"></Field>
+      <Field oldName="UPDATER" newName="数据修改人"></Field>
+      <Field oldName="CALCULATEDLENGTH" newName="计算长度"></Field>
+      <Field oldName="DIMLENGTH" newName="录入长度"></Field>
+    </Table>
+
+    <Table tableName="数据统计_管线_光缆段">
+      <Field oldName="DataTongJiDate" newName="取数时间"></Field>
+      <Field oldName="ID" newName="标识"></Field>
+      <Field oldName="NAME" newName="名称"></Field>
+      <Field oldName="区县" newName="区县"></Field>
+      <Field oldName="CREATEDATE" newName="数据录入时间"></Field>
+      <Field oldName="CREATOR" newName="数据录入人"></Field>
+      <Field oldName="UPDATEDATE" newName="数据修改时间"></Field>
+      <Field oldName="UPDATER" newName="数据修改人"></Field>
+      <Field oldName="CALCULATEDLENGTH" newName="计算长度"></Field>
+      <Field oldName="DIMLENGTH" newName="录入长度"></Field>
+    </Table>
+
+    <Table tableName="数据统计_管线_光缆">
+      <Field oldName="DataTongJiDate" newName="取数时间"></Field>
+      <Field oldName="ID" newName="标识"></Field>
+      <Field oldName="NAME" newName="名称"></Field>
+      <Field oldName="区县" newName="区县"></Field>
+      <Field oldName="CREATEDATE" newName="数据录入时间"></Field>
+      <Field oldName="CREATOR" newName="数据录入人"></Field>
+      <Field oldName="UPDATEDATE" newName="数据修改时间"></Field>
+      <Field oldName="UPDATER" newName="数据修改人"></Field>
+      <Field oldName="CALCULATEDLENGTH" newName="计算长度"></Field>
+      <Field oldName="DIMLENGTH" newName="录入长度"></Field>
+    </Table>
+
+    <Table tableName="数据统计_管线_挂墙段">
+      <Field oldName="DataTongJiDate" newName="取数时间"></Field>
+      <Field oldName="ID" newName="标识"></Field>
+      <Field oldName="NAME" newName="名称"></Field>
+      <Field oldName="区县" newName="区县"></Field>
+      <Field oldName="CREATEDATE" newName="数据录入时间"></Field>
+      <Field oldName="CREATOR" newName="数据录入人"></Field>
+      <Field oldName="UPDATEDATE" newName="数据修改时间"></Field>
+      <Field oldName="UPDATER" newName="数据修改人"></Field>
+      <Field oldName="CALCULATEDLENGTH" newName="计算长度"></Field>
+      <Field oldName="DIMLENGTH" newName="录入长度"></Field>
+    </Table>
+
+    <Table tableName="数据统计_全业务">
+      <Field oldName="DataTongJiID" newName="DataTongJiID"></Field>
+      <Field oldName="DataTongJiDate" newName="DataTongJiDate"></Field>
+      <Field oldName="CODE" newName="CODE"></Field>
+      <Field oldName="未关联业务电路的PBX" newName="未关联业务电路的PBX"></Field>
+      <Field oldName="未关联业务电路的IPPBX" newName="未关联业务电路的IPPBX"></Field>
+      <Field oldName="分光器没有向上关联光路" newName="分光器没有向上关联光路"></Field>
+      <Field oldName="未关联光路的ONU" newName="未关联光路的ONU"></Field>
+      <Field oldName="未关联业务电路的OLT" newName="未关联业务电路的OLT"></Field>
+      <Field oldName="OLT_PON口有宽带业务但此配置端口没有下挂分光器的端口数量" newName="OLT_PON口有宽带业务但此配置端口没有下挂分光器的端口数量"></Field>
+      <Field oldName="ONU所属分光器没有归属于此ONU归属的OLT的问题ONU" newName="ONU所属分光器没有归属于此ONU归属的OLT的问题ONU"></Field>
+      <Field oldName="一端ONU设备没有归属到另一端的分光器的光路" newName="一端ONU设备没有归属到另一端的分光器的光路"></Field>
+      <Field oldName="一端分光器没有归属到另一端的OLT设备的光路" newName="一端分光器没有归属到另一端的OLT设备的光路"></Field>
+      <Field oldName="一端分光器没有归属到另一端的分光器设备的光路" newName="一端分光器没有归属到另一端的分光器设备的光路"></Field>
+      <Field oldName="本月系统中增加覆盖信息中涉及到的所属设备_通过入网流程新增" newName="本月系统中增加覆盖信息中涉及到的所属设备_通过入网流程新增"></Field>
+    </Table>
+
+    <Table tableName="数据统计_全业务_实时">
+      <Field oldName="CODE" newName="CODE"></Field>
+      <Field oldName="未关联业务电路的PBX" newName="未关联业务电路的PBX"></Field>
+      <Field oldName="未关联业务电路的IPPBX" newName="未关联业务电路的IPPBX"></Field>
+      <Field oldName="分光器没有向上关联光路" newName="分光器没有向上关联光路"></Field>
+      <Field oldName="未关联光路的ONU" newName="未关联光路的ONU"></Field>
+      <Field oldName="未关联业务电路的OLT" newName="未关联业务电路的OLT"></Field>
+      <Field oldName="OLT_PON口有宽带业务但此配置端口没有下挂分光器的端口数量" newName="OLT_PON口有宽带业务但此配置端口没有下挂分光器的端口数量"></Field>
+      <Field oldName="ONU所属分光器没有归属于此ONU归属的OLT的问题ONU" newName="ONU所属分光器没有归属于此ONU归属的OLT的问题ONU"></Field>
+      <Field oldName="一端ONU设备没有归属到另一端的分光器的光路" newName="一端ONU设备没有归属到另一端的分光器的光路"></Field>
+      <Field oldName="一端分光器没有归属到另一端的OLT设备的光路" newName="一端分光器没有归属到另一端的OLT设备的光路"></Field>
+      <Field oldName="一端分光器没有归属到另一端的分光器设备的光路" newName="一端分光器没有归属到另一端的分光器设备的光路"></Field>
+      <Field oldName="本月系统中增加覆盖信息中涉及到的所属设备_通过入网流程新增" newName="本月系统中增加覆盖信息中涉及到的所属设备_通过入网流程新增"></Field>
+    </Table>
+
+    <Table tableName="数据统计_全业务_分光器没有向上关联光路">
+      <Field oldName="DataTongJiDate" newName="取数时间"></Field>
+      <Field oldName="ID" newName="标识"></Field>
+      <Field oldName="NAME" newName="名称"></Field>
+      <Field oldName="区县" newName="区县"></Field>
+      <Field oldName="CREATEDATE" newName="数据录入时间"></Field>
+      <Field oldName="CREATOR" newName="数据录入人"></Field>
+      <Field oldName="UPDATEDATE" newName="数据修改时间"></Field>
+      <Field oldName="UPDATER" newName="数据修改人"></Field>
+    </Table>
+
+    <Table tableName="数据统计_全业务_光路">
+      <Field oldName="DataTongJiDate" newName="取数时间"></Field>
+      <Field oldName="ID" newName="标识"></Field>
+      <Field oldName="NAME" newName="名称"></Field>
+      <Field oldName="区县" newName="区县"></Field>
+      <Field oldName="CREATEDATE" newName="数据录入时间"></Field>
+      <Field oldName="CREATOR" newName="数据录入人"></Field>
+      <Field oldName="UPDATEDATE" newName="数据修改时间"></Field>
+      <Field oldName="UPDATER" newName="数据修改人"></Field>
+    </Table>
+
+    <Table tableName="数据统计_全业务_ONU">
+      <Field oldName="DataTongJiDate" newName="取数时间"></Field>
+      <Field oldName="ID" newName="标识"></Field>
+      <Field oldName="NAME" newName="名称"></Field>
+      <Field oldName="区县" newName="区县"></Field>
+      <Field oldName="CREATEDATE" newName="数据录入时间"></Field>
+      <Field oldName="CREATOR" newName="数据录入人"></Field>
+      <Field oldName="UPDATEDATE" newName="数据修改时间"></Field>
+      <Field oldName="UPDATER" newName="数据修改人"></Field>
+    </Table>
+
+    <Table tableName="数据统计_全业务_OLT">
+      <Field oldName="DataTongJiDate" newName="取数时间"></Field>
+      <Field oldName="ID" newName="标识"></Field>
+      <Field oldName="NAME" newName="名称"></Field>
+      <Field oldName="区县" newName="区县"></Field>
+      <Field oldName="CREATEDATE" newName="数据录入时间"></Field>
+      <Field oldName="CREATOR" newName="数据录入人"></Field>
+      <Field oldName="UPDATEDATE" newName="数据修改时间"></Field>
+      <Field oldName="UPDATER" newName="数据修改人"></Field>
+    </Table>
+
+    <Table tableName="数据统计_全业务_PON">
+      <Field oldName="DataTongJiDate" newName="取数时间"></Field>
+      <Field oldName="ID" newName="标识"></Field>
+      <Field oldName="ASSEMBLENAME" newName="端口拼装名称"></Field>
+      <Field oldName="NAME" newName="名称"></Field>
+      <Field oldName="区县" newName="区县"></Field>
+      <Field oldName="CREATEDATE" newName="数据录入时间"></Field>
+      <Field oldName="CREATOR" newName="数据录入人"></Field>
+      <Field oldName="UPDATEDATE" newName="数据修改时间"></Field>
+      <Field oldName="UPDATER" newName="数据修改人"></Field>
+    </Table>
+
+    <Table tableName="数据统计_全业务_未关联业务电路的IPPBX">
+      <Field oldName="DataTongJiDate" newName="取数时间"></Field>
+      <Field oldName="ID" newName="标识"></Field>
+      <Field oldName="NAME" newName="名称"></Field>
+      <Field oldName="所属区县" newName="区县"></Field>
+      <Field oldName="生命周期状态" newName="生命周期状态"></Field>
+      <Field oldName="入网时间" newName="入网时间"></Field>
+      <Field oldName="update_date" newName="更新时间"></Field>
+    </Table>
+
+
+    <Table tableName="数据统计_全业务_未关联业务电路的PBX">
+      <Field oldName="DataTongJiDate" newName="取数时间"></Field>
+      <Field oldName="ID" newName="标识"></Field>
+      <Field oldName="NAME" newName="名称"></Field>
+      <Field oldName="所属区县" newName="区县"></Field>
+      <Field oldName="生命周期状态" newName="生命周期状态"></Field>
+      <Field oldName="入网时间" newName="入网时间"></Field>
+      <Field oldName="updatedate" newName="更新时间"></Field>
+    </Table>
+    <Table tableName="天馈核查_天线">
+      <Field oldName="AreaName" newName="县市"></Field>
+      <Field oldName="NAME" newName="名称"></Field>
+      <Field oldName="UPDATEDATE" newName="修改时间"></Field>
+      <Field oldName="UPDATER" newName="修改人"></Field>
+      <Field oldName="CREATEDATE" newName="创建时间"></Field>
+      <Field oldName="CREATOR" newName="创建人"></Field>
+      <Field oldName="INTERDIPANGLE_" newName="内置下倾角"></Field>
+      <Field oldName="ELECTRICALDIPANGLE" newName="电下倾角"></Field>
+      <Field oldName="MECHANICALDIPANGLE" newName="机械下倾角"></Field>
+      <Field oldName="HANGHIGH_" newName="天线挂高"></Field>
+      <Field oldName="AZIMUTH_" newName="方位角"></Field>
+      <Field oldName="CODE" newName="天线编码"></Field>
+    </Table>
+    <Table tableName="天馈核查_铁塔">
+      <Field oldName="AreaName" newName="县市"></Field>
+      <Field oldName="NAME" newName="名称"></Field>
+      <Field oldName="UPDATEDATE" newName="修改时间"></Field>
+      <Field oldName="UPDATER" newName="修改人"></Field>
+      <Field oldName="CREATEDATE" newName="创建时间"></Field>
+      <Field oldName="CREATOR" newName="创建人"></Field>
+      <Field oldName="TOWERPLATFORMAMOUNT" newName="铁塔平台数量"></Field>
+      <Field oldName="BODYHEIGHT" newName="铁塔塔身高度"></Field>
+      <Field oldName="USEDTOWERPLATFORMAMOUNT" newName="已使用平台数量"></Field>
+      <Field oldName="DIMHEIGHT" newName="铁塔高度"></Field>
+    </Table>
+
+    <!--家客增量-->
+    <Table tableName="家客增量用户资料核查统计_统一Excel导出">
+      <Field oldName="DataTongJiDate" newName="取数时间"></Field>
+      <Field oldName="DataTongJiID" newName="标识"></Field>
+      <Field oldName="所属区县" newName="所属区县"></Field>
+      <Field oldName="更新时间" newName="更新时间"></Field>
+      <Field oldName="宽带账号" newName="宽带账号"></Field>
+      <Field oldName="安装地址" newName="安装地址"></Field>
+      <Field oldName="OLT名称" newName="OLT名称"></Field>
+      <Field oldName="ONU序列号" newName="ONU序列号"></Field>
+      <Field oldName="ONU名称" newName="ONU名称"></Field>
+      <Field oldName="ONU ID" newName="ONU ID"></Field>
+      <Field oldName="ONU类型" newName="ONU类型"></Field>
+      <Field oldName="光功率" newName="光功率"></Field>
+      <Field oldName="OLT端口" newName="OLT端口"></Field>
+      <Field oldName="光交端口" newName="光交端口"></Field>
+      <Field oldName="分光器端口" newName="分光器端口"></Field>
+      <Field oldName="分纤盒端口" newName="分纤盒端口"></Field>
+      <Field oldName="ONU端口" newName="ONU端口"></Field>
+      <Field oldName="关联配置端口" newName="关联配置端口"></Field>
+      <Field oldName="末端设备名称" newName="末端设备名称"></Field>
+      <Field oldName="末端端口编码" newName="末端端口编码"></Field>
+      <Field oldName="用户接入方式" newName="用户接入方式"></Field>
+    </Table>
+    <!--1.接入网日报_系统状态-->
+    <Table tableName="接入网日报_系统状态">
+      <Field oldName="u2k_desc" newName="OLT名称"></Field>
+      <Field oldName="ip" newName="OLT IP"></Field>
+      <Field oldName="traffic" newName="峰值流量"></Field>
+      <Field oldName="traffic_time" newName="峰值时间"></Field>
+      <Field oldName="temperature" newName="最高温度"></Field>
+      <Field oldName="temperature_time" newName="高温时间"></Field>
+      <Field oldName="fan_mode" newName="风扇模式"></Field>
+      <Field oldName="fan_status" newName="风扇状态"></Field>
+      <Field oldName="ver" newName="软件版本"></Field>
+      <Field oldName="uptime" newName="运行时间"></Field>
+    </Table>
+    <!--2.接入网日报_OLT聚合组状态-->
+    <Table tableName="接入网日报_OLT聚合组状态">
+      <Field oldName="name" newName="OLT名称"></Field>
+      <Field oldName="ip" newName="OLT IP"></Field>
+      <Field oldName="lacp_id" newName="聚合组"></Field>
+      <Field oldName="selected_ports" newName="活动"></Field>
+      <Field oldName="standby_ports" newName="未激活"></Field>
+      <Field oldName="master_port" newName="主用端口"></Field>
+      <Field oldName="short_period" newName="短检测"></Field>
+      <Field oldName="long_period" newName="长检测"></Field>
+    </Table>
+    <!--3.接入网日报_OLT聚合组链路状态-->
+    <Table tableName="接入网日报_OLT聚合组链路状态">
+      <Field oldName="name" newName="OLT名称"></Field>
+      <Field oldName="ip" newName="OLT IP"></Field>
+      <Field oldName="lacp_id" newName="聚合组"></Field>
+      <Field oldName="link_id" newName="链路"></Field>
+      <Field oldName="role" newName="角色"></Field>
+      <Field oldName="status" newName="状态"></Field>
+      <Field oldName="loss_status" newName="异常状态"></Field>
+      <Field oldName="loss_time" newName="异常时间"></Field>
+    </Table>
+    <!--4.接入网日报_PON口状态-->
+    <Table tableName="接入网日报_PON口状态">
+      <Field oldName="name" newName="OLT名称"></Field>
+      <Field oldName="ip" newName="OLT IP"></Field>
+      <Field oldName="pon_id" newName="PON口"></Field>
+      <Field oldName="tx_db" newName="发光功率"></Field>
+      <Field oldName="port_status" newName="端口状态"></Field>
+      <Field oldName="module_status" newName="光模块状态"></Field>
+      <Field oldName="type" newName="型号"></Field>
+      <Field oldName="vendor" newName="厂家"></Field>
+      <Field oldName="onu_up" newName="在线ONU"></Field>
+      <Field oldName="onu_down" newName="离线ONU"></Field>
+      <Field oldName="in_bps" newName="上行峰值"></Field>
+      <Field oldName="in_time" newName="上行峰值时间"></Field>
+      <Field oldName="out_bps" newName="下行峰值"></Field>
+      <Field oldName="out_time" newName="下行峰值时间"></Field>
+      <Field oldName="last_up_time" newName="上次UP时间"></Field>
+      <Field oldName="last_down_time" newName="上次Down时间"></Field>
+    </Table>
+    <!--5.接入网日报_OLT上联端口状态-->
+    <Table tableName="接入网日报_OLT上联端口状态">
+      <Field oldName="OLT名称" newName="OLT名称"></Field>
+      <Field oldName="OLT_IP" newName="OLT_IP"></Field>
+      <Field oldName="上联端口" newName="上联端口"></Field>
+      <Field oldName="发光光功率" newName="发光光功率"></Field>
+      <Field oldName="收光光功率" newName="收光光功率"></Field>
+      <Field oldName="上行速率_Mb" newName="上行速率(Mb)"></Field>
+      <Field oldName="上行峰值时间" newName="上行峰值时间"></Field>
+      <Field oldName="下行速率_Mb" newName="下行速率(Mb)"></Field>
+      <Field oldName="下行峰值时间" newName="下行峰值时间"></Field>
+    </Table>
+    <!--账号接入信息-->
+      <Table tableName="账号接入信息">
+      <Field oldName="DataTongJiDate" newName="统计时间"></Field>
+      <Field oldName="区县" newName="区县"></Field>
+      <Field oldName="更新时间" newName="更新时间"></Field>
+      <Field oldName="账号" newName="账号"></Field>
+      <Field oldName="安装地址" newName="安装地址"></Field>
+      <Field oldName="OLT名称" newName="OLT名称"></Field>
+      <Field oldName="ONU序列号" newName="ONU序列号"></Field>
+      <Field oldName="ONU名称" newName="ONU名称"></Field>
+      <Field oldName="ONU_ID" newName="ONU_ID"></Field>
+      <Field oldName="ONU类型" newName="ONU类型"></Field>
+      <Field oldName="光功率" newName="光功率"></Field>
+      <Field oldName="OLT端口" newName="OLT端口"></Field>
+      <Field oldName="光交端口" newName="光交端口"></Field>
+      <Field oldName="分光器端口" newName="分光器端口"></Field>
+      <Field oldName="分纤盒端口" newName="分纤盒端口"></Field>
+      <Field oldName="ONU端口" newName="ONU端口"></Field>
+      <Field oldName="关联配置端口" newName="关联配置端口"></Field>
+      <Field oldName="末端设备名称" newName="末端设备名称"></Field>
+      <Field oldName="末端端口编码" newName="末端端口编码"></Field>
+      <Field oldName="竣工时间" newName="竣工时间"></Field>
+    </Table>
+    <!--单板核对-->
+    <Table tableName="单板核对">
+      <Field oldName="ID" newName="标识"></Field>
+      <Field oldName="OLT名字" newName="OLT名字"></Field>
+      <Field oldName="槽位" newName="槽位"></Field>
+      <Field oldName="单板类型_资管" newName="单板类型_资管"></Field>
+      <Field oldName="单板类型_网管" newName="单板类型_网管"></Field>
+      <Field oldName="是否匹配" newName="是否匹配"></Field>
+    </Table>
+    <!--覆盖地址_工程分段情况-->
+    <Table tableName="覆盖地址_工程分段情况">
+      <Field oldName="区县" newName="区县"></Field>
+      <Field oldName="工程名称" newName="工程名称"></Field>
+      <Field oldName="地址数量" newName="地址数量"></Field>
+    </Table>
+    <!--覆盖地址_删除地址-->
+    <Table tableName="覆盖地址_删除地址">
+      <Field oldName="创建日期" newName="创建日期"></Field>
+      <Field oldName="删除日期" newName="删除日期"></Field>
+      <Field oldName="区县" newName="区县"></Field>
+      <Field oldName="录入人" newName="录入人"></Field>
+      <Field oldName="合作单位" newName="合作单位"></Field>
+      <Field oldName="覆盖方式" newName="覆盖方式"></Field>
+      <Field oldName="工程名称" newName="工程名称"></Field>
+      <Field oldName="覆盖区域名称" newName="覆盖区域名称"></Field>
+      <Field oldName="覆盖场景" newName="覆盖场景"></Field>
+      <Field oldName="市场分类" newName="市场分类"></Field>
+      <Field oldName="地址" newName="地址"></Field>
+    </Table>
+    <!--覆盖地址_新增地址-->
+    <Table tableName="覆盖地址_新增地址">
+      <Field oldName="创建时间" newName="创建时间"></Field>
+      <Field oldName="区县" newName="区县"></Field>
+      <Field oldName="录入人" newName="录入人"></Field>
+      <Field oldName="合作单位" newName="合作单位"></Field>
+      <Field oldName="覆盖方式" newName="覆盖方式"></Field>
+      <Field oldName="工程名称" newName="工程名称"></Field>
+      <Field oldName="覆盖区域名称" newName="覆盖区域名称"></Field>
+      <Field oldName="覆盖场景" newName="覆盖场景"></Field>
+      <Field oldName="市场分类" newName="市场分类"></Field>
+      <Field oldName="地址" newName="地址"></Field>
+    </Table>
+    <Table tableName="ONU名称不一致">
+      <Field oldName="区县" newName="区县"></Field>
+      <Field oldName="ONU序列号" newName="ONU序列号"></Field>
+      <Field oldName="资管中ONU名称" newName="资管中ONU名称"></Field>
+      <Field oldName="网管中ONU名称" newName="网管中ONU名称"></Field>
+    </Table>
+    <Table tableName="ONU序列号不一致">
+      <Field oldName="区县" newName="区县"></Field>
+      <Field oldName="资管中ONU名称" newName="资管中ONU名称"></Field>
+      <Field oldName="资管中ONU序列号" newName="资管中ONU序列号"></Field>
+      <Field oldName="网管中ONU序列号" newName="网管中ONU序列号"></Field>
+    </Table>
+    <Table tableName="网管中找不到的资管ONU">
+      <Field oldName="区县" newName="区县"></Field>
+      <Field oldName="ONU名称" newName="ONU名称"></Field>
+      <Field oldName="ONU序列号" newName="ONU序列号"></Field>
+    </Table>
+    <Table tableName="ONU信息查询">
+      <Field oldName="OLT名称" newName="OLT名称"></Field>
+      <Field oldName="OLTIP地址" newName="OLTIP地址"></Field>
+      <Field oldName="ONU名称" newName="ONU名称"></Field>
+      <Field oldName="ONUIP地址" newName="ONUIP地址"></Field>
+      <Field oldName="ONU类型" newName="ONU类型"></Field>
+      <Field oldName="ONU端口" newName="ONU端口"></Field>
+      <Field oldName="ONU序列号" newName="ONU序列号"></Field>
+      <Field oldName="ONU验证码" newName="ONU验证码"></Field>
+      <Field oldName="ONU别名" newName="ONU别名"></Field>
+    </Table>
+    <Table tableName="光路完整性">
+      <Field oldName="区县" newName="区县"></Field>
+      <Field oldName="光路地址" newName="光路地址"></Field>
+      <Field oldName="创建人" newName="创建人"></Field>
+      <Field oldName="创建时间" newName="创建时间"></Field>
+    </Table>
+    <Table tableName="主配光缆利用率">
+      <Field oldName="区县" newName="区县"></Field>
+      <Field oldName="站点" newName="站点"></Field>
+      <Field oldName="已用" newName="已用"></Field>
+      <Field oldName="总数" newName="总数"></Field>
+      <Field oldName="利用率" newName="利用率"></Field>
+    </Table>
+    <Table tableName="主配光缆利用率_详细">
+      <Field oldName="光缆名称" newName="光缆名称"></Field>
+      <Field oldName="局向光纤" newName="局向光纤"></Field>
+      <Field oldName="A端" newName="A端"></Field>
+      <Field oldName="Z端" newName="Z端"></Field>
+      <Field oldName="状态" newName="状态"></Field>
+    </Table>
+
+    <Table tableName="主配光缆利用率_按资源点统计">
+      <Field oldName="区县" newName="区县"></Field>
+      <Field oldName="站点" newName="站点"></Field>
+      <Field oldName="已用" newName="已用"></Field>
+      <Field oldName="总数" newName="总数"></Field>
+      <Field oldName="利用率" newName="利用率"></Field>
+    </Table>
+    <Table tableName="OLT_PON利用率">
+      <Field oldName="区县" newName="区县"></Field>
+      <Field oldName="OLT名字" newName="OLT名字"></Field>
+      <Field oldName="已使用" newName="已使用"></Field>
+      <Field oldName="总量" newName="总量"></Field>
+      <Field oldName="使用率" newName="使用率"></Field>
+    </Table>
+    <Table tableName="PON口清单">
+      <Field oldName="区县" newName="区县"></Field>
+      <Field oldName="槽位" newName="槽位"></Field>
+      <Field oldName="单板类型" newName="单板类型"></Field>
+      <Field oldName="端口" newName="端口"></Field>
+      <Field oldName="对端设备" newName="对端设备"></Field>
+      <Field oldName="emsipaddress" newName="emsipaddress"></Field>
+    </Table>
+    <Table tableName="分光器端口利用率">
+      <Field oldName="区县" newName="区县"></Field>
+      <Field oldName="资源点" newName="资源点"></Field>
+      <Field oldName="端口占用数" newName="端口占用数"></Field>
+      <Field oldName="端口总数" newName="端口总数"></Field>
+      <Field oldName="占用率" newName="占用率"></Field>
+    </Table>
+    <Table tableName="资源点端口信息">
+      <Field oldName="资源点" newName="资源点"></Field>
+      <Field oldName="端口名" newName="端口名"></Field>
+      <Field oldName="状态" newName="状态"></Field>
+    </Table>
+
+    <Table tableName="资源点跳纤清单">
+      <Field oldName="区县" newName="区县"></Field>
+      <Field oldName="资源点" newName="资源点"></Field>
+      <Field oldName="设备" newName="设备"></Field>
+      <Field oldName="端口" newName="端口"></Field>
+      <Field oldName="光路" newName="光路"></Field>
+      <Field oldName="状态" newName="状态"></Field>
+    </Table>
+
+    <Table tableName="onu网管总量_统计_详细">
+      <Field oldName="区县" newName="区县"></Field>
+      <Field oldName="OLT名称" newName="OLT名称"></Field>
+      <Field oldName="olt_ip" newName="OLT IP"></Field>
+      <Field oldName="onu_id" newName="onu_id"></Field>
+      <Field oldName="ONU序列号" newName="ONU序列号"></Field>
+      <Field oldName="ONU名称" newName="ONU名称"></Field>
+      <Field oldName="收光" newName="收光"></Field>
+      <Field oldName="波动" newName="波动"></Field>
+      <Field oldName="测距" newName="测距"></Field>
+      <Field oldName="ONU类型" newName="ONU类型"></Field>
+      <Field oldName="ONU安装地址" newName="ONU安装地址"></Field>
+      <Field oldName="光模块型号" newName="光模块型号"></Field>
+      <Field oldName="DataTongJiDate" newName="统计时间"></Field>
+    </Table>
+    <Table tableName="pon网管总量_统计_详细">
+      <Field oldName="区县" newName="区县"></Field>
+      <Field oldName="OLT名称" newName="OLT名称"></Field>
+      <Field oldName="olt_ip" newName="OLT IP"></Field>
+      <Field oldName="PON口" newName="PON口"></Field>
+      <Field oldName="收光" newName="收光"></Field>
+      <Field oldName="波动" newName="波动"></Field>
+      <Field oldName="测距" newName="测距"></Field>
+      <Field oldName="ONU数量" newName="ONU数量"></Field>
+      <Field oldName="ONU最好收光" newName="ONU最好收光"></Field>
+      <Field oldName="光模块型号" newName="光模块型号"></Field>
+      <Field oldName="DataTongJiDate" newName="统计时间"></Field>
+    </Table>
+    <Table tableName="天馈核查_统一Excel">
+      <Field oldName="AreaName" newName="县市"></Field>
+      <Field oldName="NAME" newName="OLT名称"></Field>
+      <Field oldName="UPDATEDATE" newName="修改时间"></Field>
+      <Field oldName="UPDATER" newName="修改人"></Field>
+      <Field oldName="CREATEDATE" newName="创建时间"></Field>
+      <Field oldName="CREATOR" newName="创建人"></Field>
+    </Table>
+
+
+  </OutPut>
+</Root>
